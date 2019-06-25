@@ -12,7 +12,7 @@ print(phrase.isupper() )
 print(phrase.islower() )
 # converts variable to uppercase and checks if its true
 print(phrase.upper().isupper())
-#string functions
+#string functions8
 print(len(phrase))
 print((phrase[2]))
 #index
