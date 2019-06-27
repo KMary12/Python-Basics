@@ -10,10 +10,10 @@ for ip in junos_hosts:
      dev.open()
      config = Config(dev)
      config.lock()
-     config.load(open(path="add_snmp.conf", merge=True))
+     config.load(path="add_snmp.conf", merge=True)
      config.pdiff()
      config.commit()
      config.unlock()
      dev.close()
- except ConnectTimeoutError as e:
+  except ConnectTimeoutError as e:
     print("Connnection time out!")
